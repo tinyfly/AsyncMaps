@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Async Maps</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/demo.css">
+</head>
+
+<body>
+  <address id="address">
+    <strong>Google Inc.</strong><br>
+    1600 Amphitheatre Parkway<br>
+    Mountain View, CA 94043<br>
+    <a href="http://goo.gl/maps/BvH6g">Get Directions</a>
+  </address>
+
+  <div id="map-canvas" class="map-canvas"></div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="js/maps.js"></script>
+  <script type="text/javascript">
+    $(window).load(function() {
+      tinyfly.maps.init({
+        lat: 37.423156,
+        lng: -122.084917
+      });
+    });
+  </script>
+</body>
+</html>
