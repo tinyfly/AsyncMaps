@@ -19,7 +19,7 @@ tinyfly.maps = (function ($) {
   var settings = {
     mapOuter: '#map-canvas',
     address: '#address',
-    zoomLevel: 13,
+    zoomLevel: 15,
     apiKey: null,
     lat: null,
     lng: null
