@@ -7,6 +7,7 @@ Demo: [http://tinyfly.github.com/AsyncMaps/](http://tinyfly.github.com/AsyncMaps
 ## Usage
 
 This init function takes a configuration object. Minimum usage requires three things:
+
 1. latitude,
 2. longitude
 3. A `div` on the page with an ID of `map-canvas`
@@ -56,7 +57,7 @@ Your maps API key if you wish to use one.
 - **Type:** Float
 - **Default:** null
 
-Location lattitude
+Location latitude
 
 ### lng
 
