@@ -8,9 +8,9 @@
 
 /*globals jQuery, google */
 
-var tinyfly = tinyfly || {};
+var asyncMaps = asyncMaps || {};
 
-tinyfly.maps = (function ($) {
+asyncMaps.maps = (function ($) {
   var init;
   var load;
   var insert;
@@ -18,7 +18,7 @@ tinyfly.maps = (function ($) {
   var $address;
   var settings = {
     mapOuter: '#map-canvas',
-    address: '#address',
+    address: null,
     zoomLevel: 15,
     apiKey: null,
     lat: null,
@@ -48,7 +48,7 @@ tinyfly.maps = (function ($) {
     //allow for running from file system.
     var protocol = (location.protocol === 'file:') ? 'http://' : '//';
 
-    $script.attr('src', protocol + 'maps.googleapis.com/maps/api/js?' + key + 'sensor=false&callback=tinyfly.maps.insert');
+    $script.attr('src', protocol + 'maps.googleapis.com/maps/api/js?' + key + 'sensor=false&callback=asyncMaps.maps.insert');
     $('body').append($script);
   };
 
